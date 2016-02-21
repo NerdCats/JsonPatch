@@ -10,7 +10,7 @@ using System.Text;
 
 namespace Marvin.JsonPatch.Helpers
 {
-    internal class ActualPropertyPathResult
+    public class ActualPropertyPathResult
     {
         public int NumericEnd { get; private set; }
         public string PathToProperty { get; set; }

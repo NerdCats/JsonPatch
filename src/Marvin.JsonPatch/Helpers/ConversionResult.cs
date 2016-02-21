@@ -10,7 +10,7 @@ using System.Text;
 
 namespace Marvin.JsonPatch.Helpers
 {
-    internal class ConversionResult
+    public class ConversionResult
     {
         public bool CanBeConverted { get; private set; }
         public object ConvertedInstance { get; private set; }

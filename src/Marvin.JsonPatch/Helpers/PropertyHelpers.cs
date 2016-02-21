@@ -14,7 +14,7 @@ using System.Reflection;
 
 namespace Marvin.JsonPatch.Helpers
 {
-    internal static class PropertyHelpers
+    public static class PropertyHelpers
     {
         public static object GetValue(PropertyInfo propertyToGet, object targetObject, string pathToProperty)
         {
@@ -174,7 +174,7 @@ namespace Marvin.JsonPatch.Helpers
             else { return null; }
         }
 
-        internal static ConversionResult ConvertToActualType(Type propertyType, object value)
+        public static ConversionResult ConvertToActualType(Type propertyType, object value)
         {
             try
             {
@@ -187,7 +187,7 @@ namespace Marvin.JsonPatch.Helpers
             }
         }
         
-        internal static Type GetEnumerableType(Type type)
+        public static Type GetEnumerableType(Type type)
         {
             if (type == null) throw new ArgumentNullException();
             foreach (Type interfaceType in type.GetInterfaces())
@@ -207,7 +207,7 @@ namespace Marvin.JsonPatch.Helpers
             return targetObject.GetType().GetProperty(propertyName, bindingFlags);
         }
 
-        internal static ActualPropertyPathResult GetActualPropertyPath(
+        public static ActualPropertyPathResult GetActualPropertyPath(
             string propertyPath,
             object objectToApplyTo,
             Operation operationToReport,
@@ -249,7 +249,7 @@ namespace Marvin.JsonPatch.Helpers
             }
         }
 
-        internal static bool IsNonStringList(this Type propertyType)
+        public static bool IsNonStringList(this Type propertyType)
         {
             var isNonString = propertyType != typeof(string);
             var isList = typeof(IList).IsAssignableFrom(propertyType);
@@ -257,7 +257,7 @@ namespace Marvin.JsonPatch.Helpers
             return isNonString && (isList || isGenericList);
         }
 
-        internal static bool ImplementsGeneric(this Type propertyType, Type genericInterfaceDefinition)
+        public static bool ImplementsGeneric(this Type propertyType, Type genericInterfaceDefinition)
         {
             if (genericInterfaceDefinition == null)
                 throw new ArgumentNullException();
