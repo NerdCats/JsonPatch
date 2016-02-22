@@ -178,6 +178,9 @@ namespace Marvin.JsonPatch.Helpers
         {
             try
             {
+                if (value.GetType() == propertyType)
+                    return new ConversionResult(true, value);
+
                 var o = JsonConvert.DeserializeObject(JsonConvert.SerializeObject(value), propertyType);
                 return new ConversionResult(true, o);
             }
