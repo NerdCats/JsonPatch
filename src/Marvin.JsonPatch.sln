@@ -1,13 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.24720.0
+VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Marvin.JsonPatch", "Marvin.JsonPatch\Marvin.JsonPatch.csproj", "{82226E0C-A7B3-4BB7-8DF5-7D53EC66B47A}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Marvin.JsonPatch.XUnitTest", "Marvin.JsonPatch.XUnitTest\Marvin.JsonPatch.XUnitTest.csproj", "{D68F2FEB-081B-43D0-B670-02613921B2E9}"
-EndProject
-Project("{FF286327-C783-4F7A-AB73-9BCBAD0D4460}") = "JsonPatch.NerdCats.Nuget", "JsonPatch.NerdCats.Nuget\JsonPatch.NerdCats.Nuget.nuproj", "{4BE923DF-6C1D-49D6-BDA4-E12919ADC8DE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,10 +21,6 @@ Global
 		{D68F2FEB-081B-43D0-B670-02613921B2E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D68F2FEB-081B-43D0-B670-02613921B2E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D68F2FEB-081B-43D0-B670-02613921B2E9}.Release|Any CPU.Build.0 = Release|Any CPU
-		{4BE923DF-6C1D-49D6-BDA4-E12919ADC8DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{4BE923DF-6C1D-49D6-BDA4-E12919ADC8DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{4BE923DF-6C1D-49D6-BDA4-E12919ADC8DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{4BE923DF-6C1D-49D6-BDA4-E12919ADC8DE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
