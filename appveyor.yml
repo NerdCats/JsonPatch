@@ -18,8 +18,11 @@ before_build:
 build:
   project: src/Marvin.JsonPatch.sln
   verbosity: minimal
-after_build:
-  - cmd: nuget pack src/Marvin.JsonPatch/Marvin.JsonPatch.nuspec -Version %appveyor_build_version%
+deploy:
+- provider: NuGet
+  server: http://nerdcatsnugetserver.azurewebsites.net/nuget
+  api_key:
+    secure: MQagpo9f6CyJnvGTuzbptQ== 
 notifications:
 - provider: Slack
   incoming_webhook: https://hooks.slack.com/services/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
