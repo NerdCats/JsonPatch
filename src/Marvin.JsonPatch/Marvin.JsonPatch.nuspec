@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <package >
   <metadata>
-    <id>$id$</id>
-    <version>$version$</version>
+    <id>JsonPatch</id>
+    <version>0.0</version>
     <title>Json Patch (RFC 6902) support for .NET (Portable)</title>
     <authors>Kevin Dockx (Marvin)</authors>
     <owners>Kevin Dockx (Marvin)</owners>
@@ -18,5 +18,11 @@ Have a look at the project site for the current status of this package and to le
     <summary>JSON Patch (RFC 6902) support for .NET to easily allow and apply partial REST-ful service (through Web API) updates from any client (portable class library)</summary>
     <copyright>Copyright 2014, 2015</copyright>
     <tags>Web API WebAPI HttpPatch Json JsonPatch Partial Update ASP .NET</tags>
+    <dependencies>
+        <dependency id="Newtonsoft.Json" version="9.0.1" />
+    </dependencies>
   </metadata>
+  <files>
+    <file src="bin\Release\Marvin.JsonPatch.dll" target="lib\net45\Marvin.JsonPatch.dll" />
+  </files>
 </package>

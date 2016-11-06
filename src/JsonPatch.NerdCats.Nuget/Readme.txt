@@ -1,1 +1,0 @@
-﻿This is the nuget package for JsonPatch branch NerdCats maintains.
